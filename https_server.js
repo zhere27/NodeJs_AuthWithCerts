@@ -11,7 +11,7 @@ const options = {
   rejectUnauthorized: true,
 
   // This is necessary only if the client uses the self-signed certificate.
-  ca: [fs.readFileSync('client-cert.pem')]
+  ca: [fs.readFileSync('./client-cert.pem')]
 };
 
 https.createServer(options, (req, res) => {
